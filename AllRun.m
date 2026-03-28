@@ -1,3 +1,7 @@
+% Adjust parameter sweep as required.
+% Recommended (used to create plots in figs folder) is here (54 runs, ~30 minutes run time)
+% Non-multigrid runs for n>5 will take at least a few minutes each.
+
 clc
 clear
 close all
@@ -13,8 +17,8 @@ tol    = 1e-8;
 ReVals  = [10, 100,1000];
 nVals   = 4:6;
 SORVals = [1.0 1.4 1.8];
-Switch  = [0 1];   % 0 = smoothSOR, 1 = multigridSOR
-dt = 6e-4;
+Switch  = [0 1];       % 0 = smoothSOR, 1 = multigridSOR
+dt = 6e-4;             % this should match your FINEST nVals to avoid automatic timestep adjustments
 
 % Output file
 saveName = 'dat.mat';
