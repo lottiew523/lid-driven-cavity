@@ -99,3 +99,9 @@ Then run:
 ```matlab
 AllPlot
 ```
+
+To view plots.
+
+UPDATE 28/03:
+- Stable parameters for Re 2800 can be found in `run.m`
+- Vortex function (call using `vortex(n,LidVel,Re,dt,tmax,tol,SOR,MG)`. Duplicate function, generalised to 4 moving walls.
